@@ -2,7 +2,7 @@ output "ssh_connexion" {
   value = "ssh -i ${local_file.ssh_key.filename} ec2-user@${aws_instance.main-server.public_dns}"
 }
 output "jenkins_url" {
-  value = "http://${aws_instance.main-server.public_ip}:8080"
+  value = "http://${aws_instance.main-server.public_ip}:8085"
 }
 # output "jenkins_password_file" {
 #   value = "The Jenkins initial password is in the file called : initial_jenkins_pwd.txt in the remote server"
