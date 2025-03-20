@@ -66,8 +66,8 @@ resource "aws_security_group" "web-sg" {
   }
   ingress {
     description = "Jenkins Port"
-    from_port   = 8081
-    to_port     = 8081
+    from_port   = 8085
+    to_port     = 8085
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
